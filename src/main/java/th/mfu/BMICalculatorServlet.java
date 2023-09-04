@@ -19,7 +19,7 @@ public class BMICalculatorServlet extends HttpServlet{
         double weight =Double.parseDouble(request.getParameter("weight"));
         double height =Double.parseDouble(request.getParameter("height"));
         //TODO: calculate bmi
-        double BMI = Math.round(weight/(height*height));
+        double BMI = Math.round(weight/(height*height)*100)/100;
 
         //TODO: determine the built from BMI
         
